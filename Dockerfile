@@ -4,4 +4,4 @@ WORKDIR /app
 
 COPY target/devops-pipeline-1.0.jar app.jar
 
-CMD ["java", "-jar", "app.jar"]
+CMD ["java", "-cp", "app.jar", "com.devops.Calculator"]
